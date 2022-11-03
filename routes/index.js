@@ -9,7 +9,12 @@ router.use((req, res, next) => {
 
 // define the index page route
 router.get('/', (req, res) => {
-    res.send('Wow!')
+    res.send([
+        {
+            "id": "hey",
+            "messasge": "hi",
+        }
+    ])
 });
 
 module.exports = router;
