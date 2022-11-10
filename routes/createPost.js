@@ -32,6 +32,7 @@ router.get("/", (req, res) => {
 });
 
 router.get("/submit", (req, res) => {
+    // queryParams are based on name in input type HTML
     const queryParams = req.query; // query params from URL
     const title = queryParams.postTitle;
     const text = queryParams.postText;
